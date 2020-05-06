@@ -1,0 +1,2 @@
+java -Xmn200M -Xms400M -Xmx800M -classpath ".;jgap-examples.jar;jgap.jar;lib/log4j.jar;lib/commons-lang-2.1.jar" examples.gp.anttrail.AntTrailProblem jgap-examples\src\main\java\examples\gp\anttrail\santafe.trail
+pause

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<!-- Grouping, naming, versioning and packaging -->
+	<groupId>net.sf.jgap</groupId>
+	<artifactId>jgap-parent</artifactId>
+	<version>3.6.3</version>
+	<packaging>pom</packaging>
+	
+	<modules>
+        <module>jgap</module>
+        <module>jgap-examples</module>
+    </modules>
+
+	<!-- Project information -->
+	<name>JGAP</name>
+	<description>
+		JGAP is a Genetic Algorithms and Genetic Programming component provided as a Java framework.
+	</description>
+	<url>http://jgap.sf.net</url>
+	<inceptionYear>2001</inceptionYear>
+	<licenses>
+		<license>
+			<name>GNU Lesser General Public License 2.1</name>
+			<url>http://www.gnu.org/licenses/lgpl-2.1.txt</url>
+			<distribution>repo</distribution>
+		</license>
+		<license>
+			<name>Mozilla Public License 1.1</name>
+			<url>http://www.mozilla.org/MPL/MPL-1.1.html</url>
+			<comments>For using the MPL you have to donate at least 50 Euros to JGAP.</comments>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+	<!-- Source code management -->
+	<scm>
+		<connection>scm:cvs:pserver:anonymous@jgap.cvs.sourceforge.net:/cvsroot/jgap</connection>
+		<url>http://jgap.cvs.sourceforge.net/jgap/</url>
+	</scm>
+
+	<!-- Developers -->
+	<developers>
+		<developer>
+			<id>km</id>
+			<name>Klaus Meffert</name>
+			<email>jgap atnospam doktor-meffert.de</email>
+			<timezone>1</timezone>
+		</developer>
+	</developers>
+	
+	<!-- Dependency management-->
+	<dependencies>
+
+		<!-- Framework, core, backend -->
+		<dependency>
+			<groupId>commons-lang</groupId>
+			<artifactId>commons-lang</artifactId>
+			<version>2.3</version>
+		</dependency>
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.17</version>
+		</dependency>			
+		<dependency>
+			<groupId>commons-codec</groupId>
+			<artifactId>commons-codec</artifactId>
+			<version>1.3</version>
+		</dependency>
+		<dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-math</artifactId>
+      <version>2.0</version>
+		</dependency>
+    
+    <!-- End: for Examples -->
+
+		<!-- Testing -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+			<!-- scope>test</scope-->
+		</dependency>
+		<dependency>
+			<groupId>junit-addons</groupId>
+			<artifactId>junit-addons</artifactId>
+			<version>1.4</version>
+			<!-- <scope>test</scope> -->
+		</dependency>
+	</dependencies>
+</project>
